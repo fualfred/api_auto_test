@@ -1,0 +1,99 @@
+[2021-10-21 21:13:05,053][readYaml.py 15][ERROR]:请查看文件是否正确，异常信息是[Errno 2] No such file or directory: './config/env.yml'
+Traceback (most recent call last):
+  File "/Users/code/pythonCode/api_auto_test/common/readYaml.py", line 11, in read
+    with open(path, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config/env.yml'
+[2021-10-21 21:14:06,740][readYaml.py 15][ERROR]:请查看文件是否正确，异常信息是[Errno 2] No such file or directory: './config/env.yml'
+Traceback (most recent call last):
+  File "/Users/code/pythonCode/api_auto_test/common/readYaml.py", line 11, in read
+    with open(path, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config/env.yml'
+[2021-10-21 21:15:12,381][readYaml.py 15][ERROR]:请查看文件是否正确，异常信息是[Errno 2] No such file or directory: './config/env.yml'
+Traceback (most recent call last):
+  File "/Users/code/pythonCode/api_auto_test/common/readYaml.py", line 11, in read
+    with open(path, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config/env.yml'
+[2021-10-21 21:17:09,070][test_login.py 14][INFO]:https://api2.mubu.com
+[2021-10-21 21:17:09,071][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 21:17:09,071][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 21:17:09,071][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 21:17:09,071][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 21:17:09,229][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-fae41130-3239-4c21-937a-49be7748c97a', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc0MTQyMjksImlhdCI6MTYzNDgyMjIyOX0.n6uWCQ4cotFtyr_JVfJUzXfAkNVvNXYTgXt53J-ae3OYzf0FUvzwMhda-mKJKi6av8YZlphtshS6hS17MPr8OA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-21 21:17:09,234][test_login.py 14][INFO]:https://api2.mubu.com
+[2021-10-21 21:17:09,235][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 21:17:09,235][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 21:17:09,235][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 21:17:09,235][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 21:17:09,454][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-21 23:31:45,419][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:31:45,419][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:31:45,420][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:31:45,420][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:31:45,632][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-21beeb4d-2cee-4a3d-9a33-9c2af67801dd', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc0MjIzMDUsImlhdCI6MTYzNDgzMDMwNX0.DzKU0o6oEkAwacIHHy2lD6ExfMGebLVWFCHabYLDJV_Bv8f5kHm1EOSI3BcXML1JWdqLQjMehmSBksVlnd4__A', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-21 23:31:45,638][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:31:45,638][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:31:45,638][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:31:45,638][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:31:45,796][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-21 23:43:06,889][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:43:06,889][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:43:06,889][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:43:06,890][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:43:07,094][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-b6de823c-f763-4b46-86e9-f1f87092ac6a', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc0MjI5ODcsImlhdCI6MTYzNDgzMDk4N30.R9RIyfEJQETvlM72wN7YEXtQyqbNacJAjb0YP02v0FgxvvST5ts3J9v27EeQtHiMYKMDb2OPkBlqbAI5PhhIfQ', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-21 23:43:07,100][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:43:07,100][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:43:07,100][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:43:07,100][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:43:07,239][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-21 23:46:36,677][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:46:36,677][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:46:36,677][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:46:36,677][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:46:36,888][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-3cb8fa68-9937-44c0-b2e5-4a4e8c1a8d99', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc0MjMxOTYsImlhdCI6MTYzNDgzMTE5Nn0.jbcrHDiU2wOIM5Zu2jF_tQOhflOcrhBTvJsF8ih_1Wd5-ML5hfsSSVOJTfKbM6Bcrk9QGwQQumeKP4W2UgoaZQ', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-21 23:46:36,888][test_login.py 31][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-21 23:46:36,889][test_login.py 35][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-21 23:46:36,895][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:46:36,895][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:46:36,895][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:46:36,895][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:46:37,336][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-21 23:46:37,336][test_login.py 35][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-21 23:49:51,162][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:49:51,163][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:49:51,163][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:49:51,163][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:49:51,373][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-52fa84a4-3a7b-4452-8458-bf590736e2df', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc0MjMzOTEsImlhdCI6MTYzNDgzMTM5MX0.r_WNjK_Cnqu4axV3HeQ7E2hWcpoJdg0z5ARAHDe1jvpsfP_qR4Ti0YHwJMN59-fRvR3WVIBCniXr_pjONjslUA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-21 23:49:51,373][test_login.py 31][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-21 23:49:51,374][test_login.py 35][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-21 23:49:51,380][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-21 23:49:51,380][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-21 23:49:51,380][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-21 23:49:51,380][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-21 23:49:51,561][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-21 23:49:51,561][test_login.py 35][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]

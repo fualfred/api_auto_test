@@ -1,0 +1,472 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "guoqideMBP.lan",
+    "children" : [ {
+      "name" : "11855-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "a21b3e264ea6d3e6",
+        "parentUid" : "8d2aefc7d028117d3f81511fa36512c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634914269462,
+          "stop" : 1634914269620,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "313ca4a6ad1c1d0c",
+        "parentUid" : "8d2aefc7d028117d3f81511fa36512c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634914268260,
+          "stop" : 1634914269456,
+          "duration" : 1196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "8d2aefc7d028117d3f81511fa36512c9"
+    }, {
+      "name" : "16932-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "5c69a8f23b1f2028",
+        "parentUid" : "34df03e644c572768aa3fd9eee639d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1635060546375,
+          "stop" : 1635060546525,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.data.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "35f43068aeccbcd4",
+        "parentUid" : "34df03e644c572768aa3fd9eee639d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1635060546530,
+          "stop" : 1635060546642,
+          "duration" : 112
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_profile[test_case0]",
+        "uid" : "5aaafa8552544516",
+        "parentUid" : "34df03e644c572768aa3fd9eee639d23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1635060546646,
+          "stop" : 1635060546910,
+          "duration" : 264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'profile success', 'name': 'login', 'method': 'post', 'headers': {'jwt-token': '${token}'}, 'uri': '/v3/api/user/profile', 'mime_type': 'application/json', 'payload': None, 'validate': [{'equal_to': {'$.code': 2}}]}" ]
+      } ],
+      "uid" : "34df03e644c572768aa3fd9eee639d23"
+    }, {
+      "name" : "10463-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "c7b45f2d65c6518",
+        "parentUid" : "18aa3b36502ac6c1362caf4239ffc22f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634830986889,
+          "stop" : 1634830987096,
+          "duration" : 207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "5dd8659b268d4bb9",
+        "parentUid" : "18aa3b36502ac6c1362caf4239ffc22f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634830987100,
+          "stop" : 1634830987240,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "18aa3b36502ac6c1362caf4239ffc22f"
+    }, {
+      "name" : "9881-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "d631b19757c4980",
+        "parentUid" : "7ee603db287c7cdf0f6f9f8b7fa03c6d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634821985098,
+          "stop" : 1634821985098,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "7c59a6da4144bbe5",
+        "parentUid" : "7ee603db287c7cdf0f6f9f8b7fa03c6d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634821985051,
+          "stop" : 1634821985051,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "7ee603db287c7cdf0f6f9f8b7fa03c6d"
+    }, {
+      "name" : "11704-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "9bfe9d3d43ed3f35",
+        "parentUid" : "55afddbc779f29f1f0518d2113d8a572",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913521493,
+          "stop" : 1634913521657,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "bfc9c9c9f1a9bb48",
+        "parentUid" : "55afddbc779f29f1f0518d2113d8a572",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913521302,
+          "stop" : 1634913521490,
+          "duration" : 188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "55afddbc779f29f1f0518d2113d8a572"
+    }, {
+      "name" : "11701-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "2c66295f026a1c50",
+        "parentUid" : "32017a3f80ea255dfc46475dc4be3dd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913520010,
+          "stop" : 1634913520171,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "79424cf43e38afc8",
+        "parentUid" : "32017a3f80ea255dfc46475dc4be3dd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913519818,
+          "stop" : 1634913520006,
+          "duration" : 188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "32017a3f80ea255dfc46475dc4be3dd5"
+    }, {
+      "name" : "10476-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "3a16977ea372903b",
+        "parentUid" : "0d8ea9e280314d493bf9f55316cc3dca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634831196895,
+          "stop" : 1634831197338,
+          "duration" : 443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "f91510919206c597",
+        "parentUid" : "0d8ea9e280314d493bf9f55316cc3dca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634831196677,
+          "stop" : 1634831196890,
+          "duration" : 213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "0d8ea9e280314d493bf9f55316cc3dca"
+    }, {
+      "name" : "9898-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "fe0a784c83d29354",
+        "parentUid" : "ddfbde821311933d11bb0a3158a0b333",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634822112431,
+          "stop" : 1634822112431,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "66be24db412ec6a1",
+        "parentUid" : "ddfbde821311933d11bb0a3158a0b333",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634822112379,
+          "stop" : 1634822112379,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "ddfbde821311933d11bb0a3158a0b333"
+    }, {
+      "name" : "10428-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "f1d02da0eea6d3e",
+        "parentUid" : "c05778c53d6f13dbacb1f2cfc0158c76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634830305419,
+          "stop" : 1634830305634,
+          "duration" : 215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "f3c23ad5b68cc2c9",
+        "parentUid" : "c05778c53d6f13dbacb1f2cfc0158c76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634830305638,
+          "stop" : 1634830305797,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "c05778c53d6f13dbacb1f2cfc0158c76"
+    }, {
+      "name" : "11981-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "9fc6b996770aef4b",
+        "parentUid" : "092077056fe9b04a609f18171e2ec792",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634915836577,
+          "stop" : 1634915836769,
+          "duration" : 192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "8455b4ec3e9aa6a0",
+        "parentUid" : "092077056fe9b04a609f18171e2ec792",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634915836774,
+          "stop" : 1634915836893,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "092077056fe9b04a609f18171e2ec792"
+    }, {
+      "name" : "10503-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "6212c98aabcf5524",
+        "parentUid" : "3ed00b0e1a1e6837134256d211a23fb4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634831391162,
+          "stop" : 1634831391375,
+          "duration" : 213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "2649aecadd29c6a8",
+        "parentUid" : "3ed00b0e1a1e6837134256d211a23fb4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1634831391380,
+          "stop" : 1634831391562,
+          "duration" : 182
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "3ed00b0e1a1e6837134256d211a23fb4"
+    }, {
+      "name" : "11780-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case1]",
+        "uid" : "5eb9727d367bcebb",
+        "parentUid" : "118a7965b2c1ac780f7a2138cf11922b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913879024,
+          "stop" : 1634913879217,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      }, {
+        "name" : "test_login[test_case0]",
+        "uid" : "80065e8959274dab",
+        "parentUid" : "118a7965b2c1ac780f7a2138cf11922b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634913878847,
+          "stop" : 1634913879019,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      } ],
+      "uid" : "118a7965b2c1ac780f7a2138cf11922b"
+    }, {
+      "name" : "9912-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "f78aea2fc6027a95",
+        "parentUid" : "0e20bd92280029142acb6e08032ce49c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634822229071,
+          "stop" : 1634822229231,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "16bb95ae283b3a8e",
+        "parentUid" : "0e20bd92280029142acb6e08032ce49c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634822229235,
+          "stop" : 1634822229455,
+          "duration" : 220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "0e20bd92280029142acb6e08032ce49c"
+    }, {
+      "name" : "11141-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "e5761a7457ecac24",
+        "parentUid" : "13dc9bd7ddbb0461c88910320c4788ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634863920164,
+          "stop" : 1634863920300,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "f12e721aee2e44cc",
+        "parentUid" : "13dc9bd7ddbb0461c88910320c4788ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634863920304,
+          "stop" : 1634863920426,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "13dc9bd7ddbb0461c88910320c4788ca"
+    }, {
+      "name" : "9892-MainThread",
+      "children" : [ {
+        "name" : "test_login[test_case0]",
+        "uid" : "3e7bff6d54cfffd5",
+        "parentUid" : "f89e3fc88323e89173ac6b7634ad7e9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634822046739,
+          "stop" : 1634822046739,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+      }, {
+        "name" : "test_login[test_case1]",
+        "uid" : "66181d890b5c6329",
+        "parentUid" : "f89e3fc88323e89173ac6b7634ad7e9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634822046788,
+          "stop" : 1634822046788,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+      } ],
+      "uid" : "f89e3fc88323e89173ac6b7634ad7e9d"
+    } ],
+    "uid" : "eccf6d50ff63d9772fd63ab674845ed6"
+  } ]
+}

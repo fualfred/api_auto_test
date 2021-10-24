@@ -1,0 +1,13 @@
+testCases:
+  - testCase:
+      description: profile success
+      name: login
+      method: post
+      headers:
+        jwt-token: ${token}
+      uri: /v3/api/user/profile
+      mime_type: application/json
+      payload:
+      validate:
+         - equal_to:
+            $.code: 2

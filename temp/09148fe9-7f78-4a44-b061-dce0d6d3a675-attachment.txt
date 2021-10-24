@@ -1,0 +1,14 @@
+[32mINFO    [0m logger:utils.py:65 要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[32mINFO    [0m logger:utils.py:69 要替换的值['${token}']
+[32mINFO    [0m logger:utils.py:77 替换后的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI1NDYsImlhdCI6MTYzNTA2MDU0Nn0.uNRzGHhpsU2IsB7drPh5YTcu5yTzxie87EKEX1ah24tG_ZaMyd4irhBVANMtRynwph_QdqYBKcEMIvx3-hHTpw"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[32mINFO    [0m logger:decorator.py:10 请求的方法是：post
+[32mINFO    [0m logger:decorator.py:11 请求的uri是：/v3/api/user/profile
+[32mINFO    [0m logger:decorator.py:12 请求的Content-Type是：application/json
+[32mINFO    [0m logger:decorator.py:21 返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[32mINFO    [0m logger:test_profile.py:37 --预期验证的数据---
+[{'equal_to': {'$.code': 2}}]
+[32mINFO    [0m logger:utils.py:35 预期结果的值是2
+[32mINFO    [0m logger:utils.py:37 获取真实值是2

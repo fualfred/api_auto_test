@@ -1,0 +1,160 @@
+{
+  "uid" : "2649aecadd29c6a8",
+  "name" : "test_login[test_case1]",
+  "fullName" : "testCases.test_login.TestLogin#test_login",
+  "historyId" : "b0abd3a5432198017b621bbc26a0cf7b",
+  "time" : {
+    "start" : 1634831391380,
+    "stop" : 1634831391562,
+    "duration" : 182
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: \nExpected: <12041>\n     but: was <1204>",
+  "statusTrace" : "self = <testCases.test_login.TestLogin object at 0x7f9c38d1d820>\ntest_case = {'description': 'login fail', 'method': 'post', 'mime_type': 'application/json', 'name': 'login', ...}\nbase_url = 'https://api2.mubu.com'\n\n    @allure.story(\"test login script\")\n    @pytest.mark.parametrize(\"test_case\", Utils.get_test_cases(\"../testData/test_login.yml\"))\n    def test_login(self, test_case, base_url):\n        with allure.step(\"--第一步--提取测试数据，并提取相关请求参数---\"):\n            request_data = json.dumps(test_case)\n            request_data = Utils.replace_request_data(request_data)\n            test_case = json.loads(request_data)\n            method = test_case[\"method\"]\n            uri = test_case[\"uri\"]\n            mime_type = test_case[\"mime_type\"]\n            payload = test_case[\"payload\"]\n            files = test_case[\"files\"] if \"files\" in test_case else None\n            extract = test_case[\"extract\"] if \"extract\" in test_case else None\n            validate = test_case[\"validate\"] if \"validate\" in test_case else None\n        with allure.step(\"--第二步--发送请求--\"):\n            response = ApiRequest(base_url).send(method, uri, mime_type, headers=None, payload=payload, files=files)\n        with allure.step(\"--第三步--检查是否需要提取变量，并且设置全局变量，提供给其他用例调用--\"):\n            if extract:\n                logger.info(f\"--要提取的数据---\\n{extract}\")\n                Utils.extract(response, extract)\n        with allure.step(\"--第四步--检查是否需要断言，并且进行断言--\"):\n            if validate:\n                logger.info(f\"--预期验证的数据---\\n{validate}\")\n>               Utils.validate(response, validate)\n\ntest_login.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = {'code': 1204, 'msg': 'phone or password error'}\nvalidate = [{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]\n\n    @staticmethod\n    def validate(response, validate: list):\n        for val in validate:\n            for key, item in val.items():\n                for key_json_path, item_expect in item.items():\n                    actual_val = jsonpath.jsonpath(response, key_json_path)[0]\n                    if key == \"equal_to\":\n>                       assert_that(actual_val, equal_to(item_expect))\nE                       AssertionError: \nE                       Expected: <12041>\nE                            but: was <1204>\n\n../common/utils.py:34: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1634831391161,
+      "stop" : 1634831391162,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: \nExpected: <12041>\n     but: was <1204>",
+    "statusTrace" : "self = <testCases.test_login.TestLogin object at 0x7f9c38d1d820>\ntest_case = {'description': 'login fail', 'method': 'post', 'mime_type': 'application/json', 'name': 'login', ...}\nbase_url = 'https://api2.mubu.com'\n\n    @allure.story(\"test login script\")\n    @pytest.mark.parametrize(\"test_case\", Utils.get_test_cases(\"../testData/test_login.yml\"))\n    def test_login(self, test_case, base_url):\n        with allure.step(\"--第一步--提取测试数据，并提取相关请求参数---\"):\n            request_data = json.dumps(test_case)\n            request_data = Utils.replace_request_data(request_data)\n            test_case = json.loads(request_data)\n            method = test_case[\"method\"]\n            uri = test_case[\"uri\"]\n            mime_type = test_case[\"mime_type\"]\n            payload = test_case[\"payload\"]\n            files = test_case[\"files\"] if \"files\" in test_case else None\n            extract = test_case[\"extract\"] if \"extract\" in test_case else None\n            validate = test_case[\"validate\"] if \"validate\" in test_case else None\n        with allure.step(\"--第二步--发送请求--\"):\n            response = ApiRequest(base_url).send(method, uri, mime_type, headers=None, payload=payload, files=files)\n        with allure.step(\"--第三步--检查是否需要提取变量，并且设置全局变量，提供给其他用例调用--\"):\n            if extract:\n                logger.info(f\"--要提取的数据---\\n{extract}\")\n                Utils.extract(response, extract)\n        with allure.step(\"--第四步--检查是否需要断言，并且进行断言--\"):\n            if validate:\n                logger.info(f\"--预期验证的数据---\\n{validate}\")\n>               Utils.validate(response, validate)\n\ntest_login.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nresponse = {'code': 1204, 'msg': 'phone or password error'}\nvalidate = [{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]\n\n    @staticmethod\n    def validate(response, validate: list):\n        for val in validate:\n            for key, item in val.items():\n                for key_json_path, item_expect in item.items():\n                    actual_val = jsonpath.jsonpath(response, key_json_path)[0]\n                    if key == \"equal_to\":\n>                       assert_that(actual_val, equal_to(item_expect))\nE                       AssertionError: \nE                       Expected: <12041>\nE                            but: was <1204>\n\n../common/utils.py:34: AssertionError",
+    "steps" : [ {
+      "name" : "--第一步--提取测试数据，并提取相关请求参数---",
+      "time" : {
+        "start" : 1634831391380,
+        "stop" : 1634831391380,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第二步--发送请求--",
+      "time" : {
+        "start" : 1634831391380,
+        "stop" : 1634831391561,
+        "duration" : 181
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第三步--检查是否需要提取变量，并且设置全局变量，提供给其他用例调用--",
+      "time" : {
+        "start" : 1634831391561,
+        "stop" : 1634831391561,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第四步--检查是否需要断言，并且进行断言--",
+      "time" : {
+        "start" : 1634831391561,
+        "stop" : 1634831391562,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: \nExpected: <12041>\n     but: was <1204>\n\n",
+      "statusTrace" : "  File \"/Users/code/pythonCode/api_auto_test/testCases/test_login.py\", line 36, in test_login\n    Utils.validate(response, validate)\n  File \"/Users/code/pythonCode/api_auto_test/common/utils.py\", line 34, in validate\n    assert_that(actual_val, equal_to(item_expect))\n  File \"/Users/code/pythonCode/api_auto_test/venv/lib/python3.8/site-packages/hamcrest/core/assert_that.py\", line 58, in assert_that\n    _assert_match(actual=actual, matcher=matcher, reason=reason)\n  File \"/Users/code/pythonCode/api_auto_test/venv/lib/python3.8/site-packages/hamcrest/core/assert_that.py\", line 73, in _assert_match\n    raise AssertionError(description)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "478243724ef14592",
+      "name" : "log",
+      "source" : "478243724ef14592.txt",
+      "type" : "text/plain",
+      "size" : 583
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test login class"
+  }, {
+    "name" : "story",
+    "value" : "test login script"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "guoqideMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "10503-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_case",
+    "value" : "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2649aecadd29c6a8.json",
+  "parameterValues" : [ "{'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'description': 'login fail', 'payload': {'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}, 'validate': [{'equal_to': {'$.code': 12041}}, {'equal_to': {'$.msg': 'phone or password error'}}]}" ]
+}

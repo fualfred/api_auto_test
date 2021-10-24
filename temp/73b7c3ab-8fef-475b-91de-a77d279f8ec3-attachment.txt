@@ -1,0 +1,9 @@
+INFO     logger:decorator.py:10 请求的方法是：post
+INFO     logger:decorator.py:11 请求的uri是：/v3/api/user/phone_login
+INFO     logger:decorator.py:12 请求的Content-Type是：application/json
+INFO     logger:decorator.py:17 请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+INFO     logger:decorator.py:21 返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+INFO     logger:test_login.py:35 --预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]

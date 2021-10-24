@@ -1,0 +1,205 @@
+{
+  "uid" : "5c69a8f23b1f2028",
+  "name" : "test_login[test_case0]",
+  "fullName" : "testCases.test_login.TestLogin#test_login",
+  "historyId" : "7303d86d4a5f34082561f1ba3e135482",
+  "time" : {
+    "start" : 1635060546375,
+    "stop" : 1635060546525,
+    "duration" : 150
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1635060546374,
+      "stop" : 1635060546375,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "460405b90afebebb",
+      "name" : "log",
+      "source" : "460405b90afebebb.txt",
+      "type" : "text/plain",
+      "size" : 2954
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "guoqideMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "16932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_case",
+    "value" : "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.data.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9fc6b996770aef4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634915836577,
+        "stop" : 1634915836769,
+        "duration" : 192
+      }
+    }, {
+      "uid" : "313ca4a6ad1c1d0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634914268260,
+        "stop" : 1634914269456,
+        "duration" : 1196
+      }
+    }, {
+      "uid" : "80065e8959274dab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634913878847,
+        "stop" : 1634913879019,
+        "duration" : 172
+      }
+    }, {
+      "uid" : "bfc9c9c9f1a9bb48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634913521302,
+        "stop" : 1634913521490,
+        "duration" : 188
+      }
+    }, {
+      "uid" : "79424cf43e38afc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634913519818,
+        "stop" : 1634913520006,
+        "duration" : 188
+      }
+    }, {
+      "uid" : "e5761a7457ecac24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634863920164,
+        "stop" : 1634863920300,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "6212c98aabcf5524",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634831391162,
+        "stop" : 1634831391375,
+        "duration" : 213
+      }
+    }, {
+      "uid" : "f91510919206c597",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634831196677,
+        "stop" : 1634831196890,
+        "duration" : 213
+      }
+    }, {
+      "uid" : "c7b45f2d65c6518",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634830986889,
+        "stop" : 1634830987096,
+        "duration" : 207
+      }
+    }, {
+      "uid" : "f1d02da0eea6d3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634830305419,
+        "stop" : 1634830305634,
+        "duration" : 215
+      }
+    }, {
+      "uid" : "f78aea2fc6027a95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634822229071,
+        "stop" : 1634822229231,
+        "duration" : 160
+      }
+    }, {
+      "uid" : "66be24db412ec6a1",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1634822112379,
+        "stop" : 1634822112379,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3e7bff6d54cfffd5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1634822046739,
+        "stop" : 1634822046739,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7c59a6da4144bbe5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'NoneType' object is not subscriptable",
+      "time" : {
+        "start" : 1634821985051,
+        "stop" : 1634821985051,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5c69a8f23b1f2028.json",
+  "parameterValues" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.data.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+}

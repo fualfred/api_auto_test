@@ -1,0 +1,5 @@
+ERROR    logger:readYaml.py:15 请查看文件是否正确，异常信息是[Errno 2] No such file or directory: './config/env.yml'
+Traceback (most recent call last):
+  File "/Users/code/pythonCode/api_auto_test/common/readYaml.py", line 11, in read
+    with open(path, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './config/env.yml'

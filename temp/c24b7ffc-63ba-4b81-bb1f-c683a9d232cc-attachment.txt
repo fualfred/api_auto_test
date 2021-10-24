@@ -1,0 +1,18 @@
+[32mINFO    [0m logger:utils.py:65 要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[32mINFO    [0m logger:utils.py:69 要替换的值[]
+[32mINFO    [0m logger:utils.py:77 替换后的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[32mINFO    [0m logger:decorator.py:10 请求的方法是：post
+[32mINFO    [0m logger:decorator.py:11 请求的uri是：/v3/api/user/phone_login
+[32mINFO    [0m logger:decorator.py:12 请求的Content-Type是：application/json
+[32mINFO    [0m logger:decorator.py:17 请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[32mINFO    [0m logger:decorator.py:21 返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[32mINFO    [0m logger:test_login.py:37 --预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[32mINFO    [0m logger:utils.py:35 预期结果的值是1204
+[32mINFO    [0m logger:utils.py:37 获取真实值是1204
+[32mINFO    [0m logger:utils.py:35 预期结果的值是phone or password error
+[32mINFO    [0m logger:utils.py:37 获取真实值是phone or password error

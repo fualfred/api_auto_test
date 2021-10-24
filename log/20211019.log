@@ -1,0 +1,7 @@
+[2021-10-19 21:27:49,991][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-19 21:27:49,991][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-19 21:27:49,991][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-19 21:27:49,991][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-19 21:27:50,150][decorator.py 21][INFO]:返回的响应数据是：
+(200, {'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-493b201d-3599-449d-883c-001afa0f0248', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2MzcyNDIwNzAsImlhdCI6MTYzNDY1MDA3MH0.w_KmA0TM8vqfjSiaz0axQKEZc-YRG3UAhttNMXf7I0gFy0weZx5NBbfSXOtRXPtuUEAj6Q3PHvh4FlnEMj1myw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}})

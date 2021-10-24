@@ -1,0 +1,898 @@
+[2021-10-24 12:51:50,236][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 12:51:50,236][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 12:51:50,236][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 12:51:50,236][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 12:51:50,372][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-81bcabe7-4d03-41c6-b413-fed032a3787c', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDMxMTAsImlhdCI6MTYzNTA1MTExMH0.kgWqHAIy8TbPLuAiE8BQBvIcW_-I3tCDHASVS5vYnUr_yGpsj1_Ipjv9OYYLivZBeMF7HtlIMkekSGd7W7V2zw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 12:51:50,373][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 12:51:50,374][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 12:51:50,378][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 12:51:50,378][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 12:51:50,379][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 12:51:50,379][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 12:51:50,479][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 12:51:50,480][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 13:51:03,215][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 13:51:03,216][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 13:51:03,216][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 13:51:03,216][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 13:51:03,216][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 13:51:48,248][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 13:51:48,249][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 13:51:48,249][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 13:51:48,249][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 13:51:48,249][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 13:51:48,250][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 13:52:44,729][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 13:52:44,730][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 13:52:44,730][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 13:52:44,730][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 13:52:44,730][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 13:52:44,733][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 13:53:50,242][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 13:53:50,243][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 13:53:50,243][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 13:53:50,243][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 13:53:50,243][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 13:53:50,245][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:02:14,902][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:02:14,902][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:02:14,902][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:02:14,902][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:02:15,559][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-a4dc556e-20ae-43f1-9cd5-9aa8a6f34ac8', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDczMzUsImlhdCI6MTYzNTA1NTMzNX0.jHPUTnn12mK5GskgSwPARAiH5i8IXb31cKW-m_mX4UHrPUX7U2pxqjMMxgUZsKgF0QqWBsWoCmri6kb-QQ09Uw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:02:15,562][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:02:15,564][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:02:15,573][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:02:15,573][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:02:15,573][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:02:15,573][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:02:15,909][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:02:15,911][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:02:38,266][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:02:38,267][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:02:38,267][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 14:02:38,267][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:02:38,267][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:02:38,269][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:02:38,678][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:02:38,678][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:02:38,678][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:02:38,678][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:02:38,812][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-e29a3e73-ae41-4447-bc9a-17272cb9fa80', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDczNTgsImlhdCI6MTYzNTA1NTM1OH0.N3fjGIEhdaJiG0Fi7RcprWZL-0DxNVpnUJyNXbYBKsRIrVjTFrDeapS87UWOrlPxOp7g87E43FgyJFXW0BnXJw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:02:38,813][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:02:38,814][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:02:38,818][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:02:38,818][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:02:38,818][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:02:38,818][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:02:38,907][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:02:38,907][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:10:58,270][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:10:58,270][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:10:58,271][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 14:10:58,271][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:10:58,271][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:10:58,272][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:10:58,629][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:10:58,629][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:10:58,629][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:10:58,629][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:10:58,783][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-5960d0e6-3716-429a-a0b6-90056916a1a7', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDc4NTgsImlhdCI6MTYzNTA1NTg1OH0.SaIjUWst5g31p_MTzacVvlcNorgdgbt3y-ZaRQA1JFtXWX_mXcDBnONEL3X_orV6YL687y5JgV_ruJc_S1gGmw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:10:58,783][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:10:58,784][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:10:58,789][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:10:58,789][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:10:58,790][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:10:58,790][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:10:58,906][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:10:58,906][test_login.py 38][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:25:50,921][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:25:50,922][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:25:50,922][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:25:50,922][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:25:51,066][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-7417c527-3e0c-4f0e-b48a-1b220bbfed4a', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDg3NTEsImlhdCI6MTYzNTA1Njc1MX0.UcUhvYm7Ry1oDRprxZJu5hsYeXvp85cf16p8qCiUayHg66iX_lF4zdOqHSMwpbYDVqPu8CQSE3r7jIMew6D4kA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:25:51,066][test_login.py 35][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:25:51,067][test_login.py 39][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:25:51,072][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:25:51,072][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:25:51,072][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:25:51,072][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:25:51,196][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:25:51,196][test_login.py 39][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:30:24,663][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:30:24,664][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:30:24,665][run.py 14][INFO]:读取的yml文件列表是
+['test_login.yml']
+[2021-10-24 14:30:24,665][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:30:24,665][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:30:24,667][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:30:25,085][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:30:25,085][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:30:25,085][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:30:25,085][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:30:25,217][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-38b227a3-2aad-470c-8299-7ce796fc6c5f', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDkwMjUsImlhdCI6MTYzNTA1NzAyNX0.S4IvZ3MZPf1idJRuDSnU6s_LfSrIbryjIIvO50Mhfi3efLBrKJ67nFNbH5je1q5g0MYYsqA0xbju6lnqh4cD1w', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:30:25,217][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:30:25,218][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:30:25,222][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:30:25,222][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:30:25,222][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:30:25,223][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:30:25,313][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:30:25,314][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:39:15,564][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:39:15,565][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:39:15,565][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:39:15,565][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:39:15,565][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:39:15,567][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:39:15,982][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:39:15,982][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:39:15,982][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:39:15,983][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:39:16,228][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-b593c4c8-72e0-4ed9-b010-938bba42217f', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDk1NTYsImlhdCI6MTYzNTA1NzU1Nn0.4lSVaRT2H4malgTHtIF_bWCl-IkVQ_uYwxbMYJ3P3yNRGzzo8TaZ-I_p0HpCjKuG_Jlr_NWn6XxtFta_sPLMlg', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:39:16,228][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:39:16,231][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:39:16,236][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:39:16,236][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:39:16,237][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:39:16,237][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:39:16,405][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:39:16,406][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:40:44,115][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:40:44,115][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:40:44,116][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:40:44,116][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:40:44,116][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:40:44,120][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:40:44,548][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:40:44,549][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:40:44,549][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:40:44,549][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:40:44,914][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-403a8011-7df2-43cc-a2ab-0f72547055e5', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NDk2NDQsImlhdCI6MTYzNTA1NzY0NH0.t9NIyck62Q_lH3wZs9RRN6lKbmKG1FjL7d3Usqs22B4c6hyE7EwDpnob80SkGEokkrTpn4jdtiMdSp7WcKERKA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:40:44,915][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:40:44,917][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:40:44,922][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:40:44,922][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:40:44,923][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:40:44,923][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:40:45,188][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:40:45,188][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:40:58,270][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:40:58,270][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:40:58,270][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:40:58,270][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:40:58,270][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:40:58,271][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:41:18,951][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:41:18,951][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:41:18,951][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:41:18,951][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:41:18,951][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:41:18,952][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:42:11,985][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:42:11,986][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:42:11,986][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:42:11,986][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:42:11,987][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:42:11,988][run.py 20][INFO]:pytest脚本生成完成
+[2021-10-24 14:43:19,898][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:43:19,898][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:43:19,899][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:43:19,899][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:43:19,899][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:43:19,899][run.py 19][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:43:19,901][run.py 19][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:43:19,901][run.py 21][INFO]:pytest脚本生成完成
+[2021-10-24 14:44:05,478][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:44:05,478][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:44:05,478][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml']
+[2021-10-24 14:44:05,478][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:44:05,478][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:44:05,479][run.py 19][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:44:05,480][run.py 21][INFO]:pytest脚本生成完成
+[2021-10-24 14:45:04,188][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:45:04,189][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:45:04,189][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:45:04,189][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:45:04,189][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:45:04,189][run.py 19][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:45:04,191][run.py 19][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:45:04,192][run.py 21][INFO]:pytest脚本生成完成
+[2021-10-24 14:45:56,134][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:45:56,134][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:45:56,135][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:45:56,135][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:45:56,135][run.py 17][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:45:56,136][run.py 19][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:50:09,749][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:50:09,750][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:50:09,751][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:50:09,751][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:50:09,751][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 14:50:09,752][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:50:09,752][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:50:09,752][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:50:09,753][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 14:50:36,830][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:50:36,830][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:50:36,830][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:50:36,830][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:50:37,210][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-72b1ac42-d06a-4bf5-9402-145b3fc07418', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTAyMzcsImlhdCI6MTYzNTA1ODIzN30.IDwscbBUrSVBZo9gw-SvWGn3P3SX6iErlJ1fmyAI8vg4HkhWIIOl8f_W5faAxHkVU_iegLEPPCw0yTUYMPxq-w', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:50:37,211][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:50:37,213][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:50:37,217][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:50:37,218][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:50:37,218][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:50:37,218][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:50:37,363][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:50:37,363][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:50:37,370][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:50:37,370][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 14:50:37,371][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:50:37,511][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 14:50:37,511][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 14:55:19,357][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:55:19,358][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:55:19,358][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:55:19,358][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:55:19,358][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 14:55:19,360][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:55:19,360][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:55:19,361][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:55:19,361][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 14:55:19,805][utils.py 74][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 14:55:19,805][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:55:19,805][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:55:19,805][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:55:19,806][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:55:20,043][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-2af8fe52-b9d2-4c13-9d39-3c5e7044de51', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTA1MjAsImlhdCI6MTYzNTA1ODUyMH0.Xkdikt9GzqsvKh1wMlEqQEnU0goGMSxAEan90u9TRBsWVzLRHmqlw5YftOg0y1XTd_YvJ8uoX83DwIMqUMCcZA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:55:20,044][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.token'}
+[2021-10-24 14:55:20,045][utils.py 59][INFO]:提取的值是False
+[2021-10-24 14:55:20,045][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:55:20,045][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:55:20,045][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 14:55:20,045][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:55:20,045][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 14:55:20,050][utils.py 74][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 14:55:20,050][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:55:20,050][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:55:20,051][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:55:20,051][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:55:20,323][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:55:20,323][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:55:20,323][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 14:55:20,323][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 14:55:20,323][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 14:55:20,323][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 14:55:20,325][utils.py 74][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 14:55:20,325][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:55:20,325][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 14:55:20,325][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:55:20,535][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 14:55:20,535][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 14:55:20,535][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:55:20,536][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 14:58:15,693][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:58:15,694][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:58:15,694][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:58:15,694][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:58:15,694][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 14:58:15,696][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:58:15,696][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:58:15,697][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:58:15,698][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 14:58:16,078][utils.py 74][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 14:58:16,078][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:58:16,078][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:58:16,078][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:58:16,078][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:58:16,440][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-4bc0e50c-e05d-494b-be74-3c57e9237e54', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTA2OTYsImlhdCI6MTYzNTA1ODY5Nn0.Ridb-aYQvM57Mk9TFLRH4z1AaJVtaLr7FbAdNYkO_qILfsF8Kp-sc-Uho9hJqUajEZeyt-yG4fD2-W9yfuRY7A', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 14:58:16,441][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 14:58:16,445][utils.py 59][INFO]:提取的值是['eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTA2OTYsImlhdCI6MTYzNTA1ODY5Nn0.Ridb-aYQvM57Mk9TFLRH4z1AaJVtaLr7FbAdNYkO_qILfsF8Kp-sc-Uho9hJqUajEZeyt-yG4fD2-W9yfuRY7A']
+[2021-10-24 14:58:16,445][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 14:58:16,445][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:58:16,445][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 14:58:16,446][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:58:16,446][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 14:58:16,456][utils.py 74][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 14:58:16,456][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:58:16,457][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 14:58:16,457][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:58:16,457][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 14:58:16,600][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 14:58:16,600][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 14:58:16,601][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 14:58:16,601][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 14:58:16,601][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 14:58:16,602][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 14:58:16,607][utils.py 74][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 14:58:16,608][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 14:58:16,608][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 14:58:16,608][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 14:58:16,860][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 14:58:16,860][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 14:58:16,861][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 14:58:16,861][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 14:59:54,692][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 14:59:54,693][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 14:59:54,693][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 14:59:54,694][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 14:59:54,694][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 14:59:54,695][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 14:59:54,695][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 14:59:54,696][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 14:59:54,696][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:01:18,465][utils.py 74][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:01:22,171][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:01:22,358][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:01:22,871][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:01:25,061][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:01:31,150][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 5, 'msg': 'Login Frequency'}
+[2021-10-24 15:01:31,622][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:01:46,840][utils.py 74][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:02:16,940][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:02:16,940][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:02:16,941][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:02:16,941][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:02:16,941][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:02:16,942][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:02:16,942][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:02:16,943][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:02:16,943][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:02:17,352][utils.py 74][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:02:17,352][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:02:17,352][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:02:17,352][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:02:17,352][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:02:17,486][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-7124bce0-e1bb-4fe6-b850-ca55f4b9a518', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTA5MzcsImlhdCI6MTYzNTA1ODkzN30.KUDKTbJDSiHkFD3bTpkN2NU0NUqjB66GSQBB4ThggFGPK2S5popHOYXgYXmpqef9GjpNRmTy7KrPQBjOEHgaQg', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:02:17,486][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:02:17,487][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTA5MzcsImlhdCI6MTYzNTA1ODkzN30.KUDKTbJDSiHkFD3bTpkN2NU0NUqjB66GSQBB4ThggFGPK2S5popHOYXgYXmpqef9GjpNRmTy7KrPQBjOEHgaQg
+[2021-10-24 15:02:17,487][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:02:17,487][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:02:17,487][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:02:17,487][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:02:17,487][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:02:17,491][utils.py 74][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:02:17,492][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:02:17,492][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:02:17,492][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:02:17,492][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:02:17,595][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:02:17,595][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:02:17,595][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:02:17,595][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:02:17,595][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:02:17,595][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:02:17,599][utils.py 74][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:02:17,599][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:02:17,599][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:02:17,599][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:02:17,742][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:02:17,742][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 15:02:17,742][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:02:17,742][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:07:08,825][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:07:08,826][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:07:08,827][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:07:08,827][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:07:08,827][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:07:08,828][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:07:08,828][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:07:08,829][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:07:08,829][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:07:09,212][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:07:09,213][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:07:09,213][utils.py 76][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:07:09,213][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:07:09,213][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:07:09,213][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:07:09,213][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:07:09,346][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-521d68b8-ff54-454b-a804-51d13daaa76b', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTEyMjksImlhdCI6MTYzNTA1OTIyOX0.fSUnyq6rrWjKWuq9bAwPUaTlX72nAgdLmBBISnfY68YDSMjZPvfth5JZlzvCtw2Ng8O5Zg59QpTO7CI7L7_z0A', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:07:09,346][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:07:09,347][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTEyMjksImlhdCI6MTYzNTA1OTIyOX0.fSUnyq6rrWjKWuq9bAwPUaTlX72nAgdLmBBISnfY68YDSMjZPvfth5JZlzvCtw2Ng8O5Zg59QpTO7CI7L7_z0A
+[2021-10-24 15:07:09,347][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:07:09,347][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:07:09,347][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:07:09,347][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:07:09,347][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:07:09,351][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:07:09,351][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:07:09,351][utils.py 76][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:07:09,351][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:07:09,351][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:07:09,352][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:07:09,352][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:07:09,734][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:07:09,735][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:07:09,735][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:07:09,736][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:07:09,736][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:07:09,736][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:07:09,743][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:07:09,743][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:07:09,743][utils.py 76][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:07:09,744][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:07:09,744][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:07:09,744][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:07:09,858][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:07:09,858][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 15:07:09,859][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:07:09,859][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:14:02,358][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:14:02,359][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:14:02,360][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:14:02,360][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:14:02,360][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:14:02,362][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:14:02,362][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:14:02,362][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:14:02,362][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:14:02,756][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:14:02,756][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:14:02,757][utils.py 76][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:14:02,757][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:14:02,757][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:14:02,757][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:14:02,757][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:14:02,895][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-cb501c63-83ba-4ae6-99b1-990e6eaff4e0', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTE2NDIsImlhdCI6MTYzNTA1OTY0Mn0.8GiwmHHSUGlkli9oM7kty2xyA2q2XTnXtgP3JPFBjT5LwtbHNFja2R_WdqQ8iJysmP6EYuwFI6i95vElh1l5CQ', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:14:02,895][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:14:02,896][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTE2NDIsImlhdCI6MTYzNTA1OTY0Mn0.8GiwmHHSUGlkli9oM7kty2xyA2q2XTnXtgP3JPFBjT5LwtbHNFja2R_WdqQ8iJysmP6EYuwFI6i95vElh1l5CQ
+[2021-10-24 15:14:02,896][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:14:02,896][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:14:02,896][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:14:02,896][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:14:02,896][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:14:02,901][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:14:02,901][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:14:02,901][utils.py 76][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:14:02,901][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:14:02,901][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:14:02,901][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:14:02,901][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:14:02,995][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:14:02,995][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:14:02,996][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:14:02,996][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:14:02,996][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:14:02,996][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:14:02,999][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:14:03,000][utils.py 68][INFO]:要替换的值[]
+[2021-10-24 15:14:03,000][utils.py 76][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:14:03,000][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:14:03,000][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:14:03,000][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:14:03,171][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:14:03,172][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 15:14:03,172][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:14:03,172][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:18:01,584][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:18:01,585][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:18:01,585][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:18:01,585][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:18:01,585][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:18:01,587][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:18:01,587][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:18:01,588][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:18:01,588][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:18:01,994][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:18:02,043][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:18:02,049][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:18:22,632][readYaml.py 15][ERROR]:请查看文件是否正确，异常信息是[Errno 2] No such file or directory: 'demo.yml'
+Traceback (most recent call last):
+  File "/Users/code/pythonCode/api_auto_test/common/readYaml.py", line 11, in read
+    with open(path, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'demo.yml'
+[2021-10-24 15:18:22,633][utils.py 22][INFO]:读取测试用例出错，请检查yaml文件
+[2021-10-24 15:19:45,537][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:19:45,538][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:19:45,538][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:19:45,538][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:19:45,538][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:19:45,540][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:19:45,540][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:19:45,540][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:19:45,540][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:19:45,927][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:19:45,927][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:19:45,928][utils.py 77][INFO]:替换的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:19:45,928][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:19:45,928][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:19:45,928][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:19:45,928][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:19:46,185][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-65802a70-b56b-493f-b7b7-b3c022c3214b', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTE5ODYsImlhdCI6MTYzNTA1OTk4Nn0.H3CJFRigvLjj7qzWss75cFHW-zhm7sHK8Z6NXHeNLJkxzARVvmxqJTwXVo09AI6WFy7L4cg-Qa6Xc2563VdYKA', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:19:46,185][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:19:46,186][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTE5ODYsImlhdCI6MTYzNTA1OTk4Nn0.H3CJFRigvLjj7qzWss75cFHW-zhm7sHK8Z6NXHeNLJkxzARVvmxqJTwXVo09AI6WFy7L4cg-Qa6Xc2563VdYKA
+[2021-10-24 15:19:46,187][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:19:46,187][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:19:46,187][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:19:46,187][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:19:46,187][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:19:46,194][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:19:46,194][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:19:46,194][utils.py 77][INFO]:替换的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:19:46,194][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:19:46,194][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:19:46,194][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:19:46,194][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:19:46,292][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:19:46,292][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:19:46,292][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:19:46,293][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:19:46,293][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:19:46,293][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:19:46,298][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:19:46,298][utils.py 69][INFO]:要替换的值['${token}']
+[2021-10-24 15:19:46,299][utils.py 77][INFO]:替换的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTE5ODYsImlhdCI6MTYzNTA1OTk4Nn0.H3CJFRigvLjj7qzWss75cFHW-zhm7sHK8Z6NXHeNLJkxzARVvmxqJTwXVo09AI6WFy7L4cg-Qa6Xc2563VdYKA"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:19:46,299][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:19:46,299][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:19:46,299][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:19:46,399][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:19:46,400][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}]
+[2021-10-24 15:19:46,400][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:19:46,400][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:25:28,121][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:25:28,122][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:25:28,122][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:25:28,122][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:25:28,122][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:25:28,123][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:25:28,123][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:25:28,124][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:25:28,124][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:25:28,503][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:25:28,503][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:25:28,503][utils.py 77][INFO]:替换后的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:25:28,503][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:25:28,503][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:25:28,504][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:25:28,504][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:25:28,624][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-365d1658-3899-41ed-ac4f-851d1489e5da', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTIzMjgsImlhdCI6MTYzNTA2MDMyOH0.VyBRnQm4uJF2m2yhQxAlCEPgEZ7plgj5ntZzskWkzNRI-kI2jkpMIGxccFbf3-c3KbmPZtZ2m4meoM1bQpsmEg', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:25:28,624][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:25:28,625][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTIzMjgsImlhdCI6MTYzNTA2MDMyOH0.VyBRnQm4uJF2m2yhQxAlCEPgEZ7plgj5ntZzskWkzNRI-kI2jkpMIGxccFbf3-c3KbmPZtZ2m4meoM1bQpsmEg
+[2021-10-24 15:25:28,625][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:25:28,625][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:25:28,625][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:25:28,625][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:25:28,625][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:25:28,629][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:25:28,629][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:25:28,629][utils.py 77][INFO]:替换后的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:25:28,629][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:25:28,629][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:25:28,629][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:25:28,630][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:25:28,736][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:25:28,736][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:25:28,736][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:25:28,736][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:25:28,736][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:25:28,736][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:25:28,740][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:25:28,740][utils.py 69][INFO]:要替换的值['${token}']
+[2021-10-24 15:25:28,740][utils.py 77][INFO]:替换后的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTIzMjgsImlhdCI6MTYzNTA2MDMyOH0.VyBRnQm4uJF2m2yhQxAlCEPgEZ7plgj5ntZzskWkzNRI-kI2jkpMIGxccFbf3-c3KbmPZtZ2m4meoM1bQpsmEg"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:25:28,740][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:25:28,740][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:25:28,740][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:25:28,834][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:25:28,834][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 2}}]
+[2021-10-24 15:25:28,834][utils.py 35][INFO]:预期结果的值是2
+[2021-10-24 15:25:28,834][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:27:17,909][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:27:17,910][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:27:17,910][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:27:17,910][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:27:17,910][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:27:17,912][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:27:17,912][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:27:17,912][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:27:17,913][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:27:18,337][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:27:18,337][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:27:18,337][utils.py 77][INFO]:替换后的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:27:18,338][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:27:18,338][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:27:18,338][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:27:18,338][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:27:18,479][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-8e5106f2-8a23-4eef-a649-9ad1543fb79a', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI0MzgsImlhdCI6MTYzNTA2MDQzOH0.haQ1OcunCszRIW25aRjqee-fbxWrB4r672XN-MYaZ_29d9OgPM6Z264QeS1WyH5d_99ceOhAKDskhJS155P1AQ', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:27:18,479][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:27:18,479][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI0MzgsImlhdCI6MTYzNTA2MDQzOH0.haQ1OcunCszRIW25aRjqee-fbxWrB4r672XN-MYaZ_29d9OgPM6Z264QeS1WyH5d_99ceOhAKDskhJS155P1AQ
+[2021-10-24 15:27:18,480][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:27:18,480][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:27:18,480][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:27:18,480][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:27:18,480][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:27:18,485][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:27:18,485][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:27:18,485][utils.py 77][INFO]:替换后的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:27:18,485][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:27:18,485][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:27:18,485][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:27:18,485][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:27:18,601][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:27:18,601][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:27:18,601][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:27:18,601][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:27:18,601][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:27:18,602][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:27:18,606][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:27:18,606][utils.py 69][INFO]:要替换的值['${token}']
+[2021-10-24 15:27:18,606][utils.py 77][INFO]:替换后的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI0MzgsImlhdCI6MTYzNTA2MDQzOH0.haQ1OcunCszRIW25aRjqee-fbxWrB4r672XN-MYaZ_29d9OgPM6Z264QeS1WyH5d_99ceOhAKDskhJS155P1AQ"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:27:18,607][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:27:18,607][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:27:18,607][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:27:18,851][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:27:18,852][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 2}}]
+[2021-10-24 15:27:18,852][utils.py 35][INFO]:预期结果的值是2
+[2021-10-24 15:27:18,852][utils.py 37][INFO]:获取真实值是2
+[2021-10-24 15:29:06,051][run.py 11][INFO]:--测试数据的路径是/Users/code/pythonCode/api_auto_test/testData
+[2021-10-24 15:29:06,051][run.py 12][INFO]:--读取测试yml文件---
+[2021-10-24 15:29:06,051][run.py 14][INFO]:读取的yml文件列表是
+['test_profile.yml', 'test_login.yml']
+[2021-10-24 15:29:06,051][run.py 16][INFO]:测试用例目录是/Users/code/pythonCode/api_auto_test/testCases
+[2021-10-24 15:29:06,051][run.py 17][INFO]:先删除之前生成的pytest脚本
+[2021-10-24 15:29:06,052][run.py 19][INFO]:正在生成pytest测试脚本
+[2021-10-24 15:29:06,052][run.py 21][INFO]:在生成test_profile.yml的测试脚本
+[2021-10-24 15:29:06,052][run.py 21][INFO]:在生成test_login.yml的测试脚本
+[2021-10-24 15:29:06,052][run.py 23][INFO]:pytest脚本生成完成
+[2021-10-24 15:29:06,374][utils.py 65][INFO]:要替换的数据
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:29:06,375][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:29:06,375][utils.py 77][INFO]:替换后的数据是
+{"description": "login success", "name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "payload": {"phone": "13528872802", "password": "123456abc", "callbackType": 0}, "extract": {"token": "$.data.token"}, "validate": [{"equal_to": {"$.code": 0}}, {"equal_to": {"$.code": 0}}]}
+[2021-10-24 15:29:06,375][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:29:06,375][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:29:06,375][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:29:06,375][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:29:06,523][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-3ab25ab2-f10e-44a1-a3f0-ea7a891f1d9f', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI1NDYsImlhdCI6MTYzNTA2MDU0Nn0.uNRzGHhpsU2IsB7drPh5YTcu5yTzxie87EKEX1ah24tG_ZaMyd4irhBVANMtRynwph_QdqYBKcEMIvx3-hHTpw', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+[2021-10-24 15:29:06,523][test_login.py 34][INFO]:--要提取的数据---
+{'token': '$.data.token'}
+[2021-10-24 15:29:06,524][utils.py 59][INFO]:提取的值是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI1NDYsImlhdCI6MTYzNTA2MDU0Nn0.uNRzGHhpsU2IsB7drPh5YTcu5yTzxie87EKEX1ah24tG_ZaMyd4irhBVANMtRynwph_QdqYBKcEMIvx3-hHTpw
+[2021-10-24 15:29:06,524][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]
+[2021-10-24 15:29:06,524][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:29:06,524][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:29:06,525][utils.py 35][INFO]:预期结果的值是0
+[2021-10-24 15:29:06,525][utils.py 37][INFO]:获取真实值是0
+[2021-10-24 15:29:06,529][utils.py 65][INFO]:要替换的数据
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:29:06,529][utils.py 69][INFO]:要替换的值[]
+[2021-10-24 15:29:06,530][utils.py 77][INFO]:替换后的数据是
+{"name": "login", "method": "post", "uri": "/v3/api/user/phone_login", "mime_type": "application/json", "description": "login fail", "payload": {"phone": "13528872801", "password": "123456abc", "callbackType": 0}, "validate": [{"equal_to": {"$.code": 1204}}, {"equal_to": {"$.msg": "phone or password error"}}]}
+[2021-10-24 15:29:06,530][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:29:06,530][decorator.py 11][INFO]:请求的uri是：/v3/api/user/phone_login
+[2021-10-24 15:29:06,530][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:29:06,530][decorator.py 17][INFO]:请求数据是：
+{'phone': '13528872801', 'password': '123456abc', 'callbackType': 0}
+[2021-10-24 15:29:06,640][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 1204, 'msg': 'phone or password error'}
+[2021-10-24 15:29:06,640][test_login.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 1204}}, {'equal_to': {'$.msg': 'phone or password error'}}]
+[2021-10-24 15:29:06,641][utils.py 35][INFO]:预期结果的值是1204
+[2021-10-24 15:29:06,641][utils.py 37][INFO]:获取真实值是1204
+[2021-10-24 15:29:06,641][utils.py 35][INFO]:预期结果的值是phone or password error
+[2021-10-24 15:29:06,641][utils.py 37][INFO]:获取真实值是phone or password error
+[2021-10-24 15:29:06,646][utils.py 65][INFO]:要替换的数据
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "${token}"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:29:06,646][utils.py 69][INFO]:要替换的值['${token}']
+[2021-10-24 15:29:06,647][utils.py 77][INFO]:替换后的数据是
+{"description": "profile success", "name": "login", "method": "post", "headers": {"jwt-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc2NTI1NDYsImlhdCI6MTYzNTA2MDU0Nn0.uNRzGHhpsU2IsB7drPh5YTcu5yTzxie87EKEX1ah24tG_ZaMyd4irhBVANMtRynwph_QdqYBKcEMIvx3-hHTpw"}, "uri": "/v3/api/user/profile", "mime_type": "application/json", "payload": null, "validate": [{"equal_to": {"$.code": 2}}]}
+[2021-10-24 15:29:06,647][decorator.py 10][INFO]:请求的方法是：post
+[2021-10-24 15:29:06,647][decorator.py 11][INFO]:请求的uri是：/v3/api/user/profile
+[2021-10-24 15:29:06,648][decorator.py 12][INFO]:请求的Content-Type是：application/json
+[2021-10-24 15:29:06,907][decorator.py 21][INFO]:返回的响应数据是：
+{'code': 2, 'msg': 'Login Expired'}
+[2021-10-24 15:29:06,908][test_profile.py 37][INFO]:--预期验证的数据---
+[{'equal_to': {'$.code': 2}}]
+[2021-10-24 15:29:06,908][utils.py 35][INFO]:预期结果的值是2
+[2021-10-24 15:29:06,909][utils.py 37][INFO]:获取真实值是2

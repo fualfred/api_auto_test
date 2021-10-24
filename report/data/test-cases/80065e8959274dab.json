@@ -1,0 +1,154 @@
+{
+  "uid" : "80065e8959274dab",
+  "name" : "test_login[test_case0]",
+  "fullName" : "testCases.test_login.TestLogin#test_login",
+  "historyId" : "7303d86d4a5f34082561f1ba3e135482",
+  "time" : {
+    "start" : 1634913878847,
+    "stop" : 1634913879019,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1634913878846,
+      "stop" : 1634913878847,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "--第一步--提取测试数据，并提取相关请求参数---",
+      "time" : {
+        "start" : 1634913878847,
+        "stop" : 1634913878847,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第二步--发送请求--",
+      "time" : {
+        "start" : 1634913878847,
+        "stop" : 1634913879018,
+        "duration" : 171
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第三步--检查是否需要提取变量，并且设置全局变量，提供给其他用例调用--",
+      "time" : {
+        "start" : 1634913879018,
+        "stop" : 1634913879019,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "--第四步--检查是否需要断言，并且进行断言--",
+      "time" : {
+        "start" : 1634913879019,
+        "stop" : 1634913879019,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7d06e04e9f13681e",
+      "name" : "log",
+      "source" : "7d06e04e9f13681e.txt",
+      "type" : "text/plain",
+      "size" : 1536
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "test login class"
+  }, {
+    "name" : "story",
+    "value" : "test login script"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "guoqideMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "11780-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_case",
+    "value" : "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80065e8959274dab.json",
+  "parameterValues" : [ "{'description': 'login success', 'name': 'login', 'method': 'post', 'uri': '/v3/api/user/phone_login', 'mime_type': 'application/json', 'payload': {'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}, 'extract': {'token': '$.token'}, 'validate': [{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]}" ]
+}

@@ -1,0 +1,11 @@
+INFO     logger:decorator.py:10 请求的方法是：post
+INFO     logger:decorator.py:11 请求的uri是：/v3/api/user/phone_login
+INFO     logger:decorator.py:12 请求的Content-Type是：application/json
+INFO     logger:decorator.py:17 请求数据是：
+{'phone': '13528872802', 'password': '123456abc', 'callbackType': 0}
+INFO     logger:decorator.py:21 返回的响应数据是：
+{'code': 0, 'data': {'googleId': '', 'gender': '', 'year': '', 'city': '', 'remark': '', 'view': 'grid', 'province': '', 'googleName': '', 'id': 14578467, 'wxName': '', 'email': '', 'vipEndDate': '', 'clientId': 'web-8b77c23c-0992-4e87-b766-821e09f27bc0', 'level': 0, 'encryptPassword': '', 'facebookId': '', 'photo': 'photo/DEFAULT-AVATAR-4860fe1e-18d6-4e5f-b424-364f3d4347a2.jpg', 'updateTime': 1633793230453, 'wxId': '', 'passSecure': True, 'sort': 'time', 'appleId': '', 'qqId': '', 'appleName': '', 'agreeTermService': False, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMTQ1Nzg0NjciLCJsb2dpblR5cGUiOiJtb2JpbGUiLCJleHAiOjE2Mzc1MDc4MzYsImlhdCI6MTYzNDkxNTgzNn0.exOeMeFHNJzxz4TjCS8T_VUDceUA0tGAiEddr4bOQpd2MmDFRPl-EplSxRtfRJMMhq6A02lbHxuZVNSlFtX1tQ', 'phone': '13528872802', 'createTime': 1633793230427, 'name': '幕布用户2327', 'anonymUserFlag': 0, 'qqName': '', 'toutiaoId': '', 'facebookName': '', 'larkId': ''}}
+INFO     logger:test_login.py:36 --要提取的数据---
+{'token': '$.token'}
+INFO     logger:test_login.py:40 --预期验证的数据---
+[{'equal_to': {'$.code': 0}}, {'equal_to': {'$.code': 0}}]

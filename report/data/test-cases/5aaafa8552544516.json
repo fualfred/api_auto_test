@@ -1,0 +1,90 @@
+{
+  "uid" : "5aaafa8552544516",
+  "name" : "test_profile[test_case0]",
+  "fullName" : "testCases.test_profile.TestProfile#test_profile",
+  "historyId" : "c7ae318c305d0616dbb327fbcbe74300",
+  "time" : {
+    "start" : 1635060546646,
+    "stop" : 1635060546910,
+    "duration" : 264
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1635060546374,
+      "stop" : 1635060546375,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "baf1b53ac420cc1c",
+      "name" : "log",
+      "source" : "baf1b53ac420cc1c.txt",
+      "type" : "text/plain",
+      "size" : 1429
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_profile"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProfile"
+  }, {
+    "name" : "host",
+    "value" : "guoqideMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "16932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCases.test_profile"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "test_case",
+    "value" : "{'description': 'profile success', 'name': 'login', 'method': 'post', 'headers': {'jwt-token': '${token}'}, 'uri': '/v3/api/user/profile', 'mime_type': 'application/json', 'payload': None, 'validate': [{'equal_to': {'$.code': 2}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5aaafa8552544516.json",
+  "parameterValues" : [ "{'description': 'profile success', 'name': 'login', 'method': 'post', 'headers': {'jwt-token': '${token}'}, 'uri': '/v3/api/user/profile', 'mime_type': 'application/json', 'payload': None, 'validate': [{'equal_to': {'$.code': 2}}]}" ]
+}
