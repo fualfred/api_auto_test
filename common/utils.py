@@ -73,7 +73,7 @@ class Utils:
                 request_data = request_data.replace(val, getattr(EnvData, key))
             else:
                 key = val[4:-1]
-                request_data = request_data.replace(val, eval(key))
+                request_data = request_data.replace(val, str(eval(key)))
         logger.info(f"替换后的数据是\n{str(request_data)}")
         return request_data
 
