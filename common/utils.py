@@ -57,7 +57,7 @@ class Utils:
         for key, val in extract.items():
             set_value = jsonpath.jsonpath(response, val)[0]
             logger.info(f"提取的值是{set_value}")
-            setattr(EnvData, key, set_value)
+            setattr(EnvData, key, str(set_value))
 
     # 替换变量${a} 或者函数$Fn{a(a+b)}
     @staticmethod
