@@ -6,8 +6,8 @@ testCases:
       uri: /v3/api/user/phone_login
       mime_type: application/json
       payload:
-        phone: "135288xxx"
-        password: "123456sssbc"
+        phone: "13528872802"
+        password: "123456abc"
         callbackType: 0
       extract:
         token: $.data.token
@@ -23,8 +23,8 @@ testCases:
       mime_type: application/json
       description: login fail
       payload:
-        phone: "13528872sfds"
-        password: "123456abc"
+        phone: "13528872802"
+        password: "123456abdc"
         callbackType: 0
       validate:
         - equal_to:
