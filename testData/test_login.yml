@@ -7,7 +7,7 @@ testCases:
       mime_type: application/json
       payload:
         phone: "13528872802"
-        password: "123456abc"
+        password: "Aa12345678"
         callbackType: 0
       extract:
         token: $.data.token
