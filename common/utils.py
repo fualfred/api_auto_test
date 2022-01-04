@@ -6,7 +6,7 @@ import os
 from hamcrest import *
 from common.logger import logger
 from common.envData import EnvData
-from common.expand import *
+import common.expand as Expand
 from common.readYaml import ReadYaml
 
 project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,8 +72,20 @@ class Utils:
                 key = val[2:-1]
                 request_data = request_data.replace(val, getattr(EnvData, key))
             else:
-                key = val[4:-1]
-                request_data = request_data.replace(val, str(eval(key)))
+                val_str = val[4:-1]
+                start_param_position = 0
+                end_param_position = 0
+                method = ''
+                for i in range(len(val_str)):
+                    if val_str[i] == '(':
+                        method = val_str[0:i]
+                        start_param_position = i
+                    if val_str[i] == ')':
+                        end_param_position = i
+                params = val_str[start_param_position + 1: end_param_position]
+                params = params.split(',')
+                method_name = getattr(Expand, method)
+                request_data = request_data.replace(val, str(method_name(*params)))
         logger.info(f"替换后的数据是\n{str(request_data)}")
         return request_data
 
