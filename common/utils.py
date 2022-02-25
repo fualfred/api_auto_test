@@ -62,6 +62,18 @@ class Utils:
     # 替换变量${a} 或者函数$Fn{a(a+b)}
     @staticmethod
     def replace_request_data(request_data: str):
+         def _decode(o):
+            if isinstance(o, str):
+                try:
+                    return int(o)
+                except ValueError:
+                    return o
+            elif isinstance(o, dict):
+                return {k: _decode(v) for k, v in o.items()}
+            elif isinstance(o, list):
+                return [_decode(v) for v in o]
+            else:
+                return o
         logger.info(f"要替换的数据\n{request_data}")
         regex = r"\$\{.+?\}|\$Fn\{.+?\}"
         regex_obj = re.compile(regex)
@@ -87,7 +99,7 @@ class Utils:
                 method_name = getattr(Expand, method)
                 request_data = request_data.replace(val, str(method_name(*params)))
         logger.info(f"替换后的数据是\n{str(request_data)}")
-        return request_data
+        return json.loads(request_data, object_hook=_decode)
 
     @staticmethod
     def generate_test_script(yml_file_name: str, out_put_dir):
