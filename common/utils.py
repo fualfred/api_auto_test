@@ -96,8 +96,8 @@ class Utils:
                         end_param_position = i
                 params = val_str[start_param_position + 1: end_param_position]
                 params = params.split(',')
-                method_name = getattr(Expand, method)
-                request_data = request_data.replace(val, str(method_name(*params)))
+                value = getattr(Expand, method).__wrapped__(Expand,*params)
+                request_data = request_data.replace(val, str(value))
         logger.info(f"替换后的数据是\n{str(request_data)}")
         return json.loads(request_data, object_hook=_decode)
 
