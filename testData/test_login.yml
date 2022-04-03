@@ -6,7 +6,7 @@ testCases:
       uri: /v3/api/user/phone_login
       mime_type: application/json
       payload:
-        phone: "13528872802"
+        phone: "135288728xx"
         password: "Aa12345678"
         callbackType: 0
       extract:
@@ -23,7 +23,7 @@ testCases:
       mime_type: application/json
       description: login fail
       payload:
-        phone: "13528872802"
+        phone: "1352887xx"
         password: "123456abdc"
         callbackType: 0
       validate:
