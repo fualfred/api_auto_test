@@ -154,25 +154,25 @@ class Utils:
         logger.info(f"替换后的数据是\n{request_data}")
         return json.loads(request_data, object_hook=_decode)
 
-    @staticmethod
-    def generate_test_script(yml_file_name: str, out_put_dir):
-        test_class = yml_file_name.split(".")[0]
-        test_class_name_list = test_class.split("_")
-        test_class_name = test_class_name_list[0].capitalize() + test_class_name_list[1].capitalize()
-        template_path = os.path.join(project_dir, "test_template.txt")
-        template_file = open(template_path, "r", encoding="utf-8")
-        lines = template_file.readlines()
-        out_put_file_path = out_put_dir + "/" + yml_file_name.replace(".yml", ".py")
-        out_put_file = open(out_put_file_path, "a", encoding="utf-8")
-        for line in lines:
-            if "%fileName" in line:
-                line = line.replace("%fileName", yml_file_name)
-            if "%testClassName" in line:
-                line = line.replace("%testClassName", test_class_name)
-            if "%testMethod" in line:
-                line = line.replace("%testMethod", test_class)
-            out_put_file.write(line)
-        out_put_file.close()
+    # @staticmethod
+    # def generate_test_script(yml_file_name: str, out_put_dir):
+    #     test_class = yml_file_name.split(".")[0]
+    #     test_class_name_list = test_class.split("_")
+    #     test_class_name = test_class_name_list[0].capitalize() + test_class_name_list[1].capitalize()
+    #     template_path = os.path.join(project_dir, "test_template.txt")
+    #     template_file = open(template_path, "r", encoding="utf-8")
+    #     lines = template_file.readlines()
+    #     out_put_file_path = out_put_dir + "/" + yml_file_name.replace(".yml", ".py")
+    #     out_put_file = open(out_put_file_path, "a", encoding="utf-8")
+    #     for line in lines:
+    #         if "%fileName" in line:
+    #             line = line.replace("%fileName", yml_file_name)
+    #         if "%testClassName" in line:
+    #             line = line.replace("%testClassName", test_class_name)
+    #         if "%testMethod" in line:
+    #             line = line.replace("%testMethod", test_class)
+    #         out_put_file.write(line)
+    #     out_put_file.close()
 
     @staticmethod
     def get_test_data(data_dir):
@@ -191,6 +191,7 @@ class Utils:
 
     @staticmethod
     def generate_test_script_by_jinja2(yml_file_name: str, out_put_dir):
+
         test_class = yml_file_name.split(".")[0]
         test_class_name_list = test_class.split("_")
         test_class_name = test_class_name_list[0].capitalize() + test_class_name_list[1].capitalize()
