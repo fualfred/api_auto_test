@@ -191,7 +191,6 @@ class Utils:
 
     @staticmethod
     def generate_test_script_by_jinja2(yml_file_name: str, out_put_dir):
-        global __TEST_CASE_TEMPLATE__
         test_class = yml_file_name.split(".")[0]
         test_class_name_list = test_class.split("_")
         test_class_name = test_class_name_list[0].capitalize() + test_class_name_list[1].capitalize()
