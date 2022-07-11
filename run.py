@@ -4,6 +4,7 @@ import pytest
 from common.utils import Utils
 from common.utils import project_dir
 from common.logger import logger
+import os
 
 
 def main():
@@ -19,10 +20,15 @@ def main():
     logger.info(f"正在生成pytest测试脚本")
     for data in test_data:
         logger.info(f"在生成{data}的测试脚本")
-        Utils.generate_test_script(data, out_put_dir)
+        Utils.generate_test_script_by_jinja2(data, out_put_dir)
+    logger.info(f"格式化测试脚本……")
+    for root, dirs, files in os.walk(out_put_dir):
+        logger.info(f"root:{root}---dirs:{dirs}--files:{files}")
+        map(Utils.beautify_test_case_file, [os.path.join(root, file) for file in files if file.startswith("test")])
+    logger.info(f"格式化测试脚本完成……")
     logger.info(f"pytest脚本生成完成")
 
 
 if __name__ == "__main__":
     main()
-    pytest.main()
+    # pytest.main()
