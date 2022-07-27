@@ -31,15 +31,14 @@ test_data_path = project_dir + "/testData/" + "{{yaml_file_name}}"
 class {{test_class_name}}:
 
     @pytest.mark.parametrize("test_case", Utils.get_test_cases(test_data_path))
-    def {{test_method}}(self, test_case, base_url, common_request_data):
+    def {{test_method}}(self, test_case, base_url):
 
         request_data = json.dumps(test_case)
         request_data = Utils.replace_request_data(request_data)
         method = request_data["method"]
         uri = request_data["uri"]
         mime_type = request_data["mime_type"]
-        common_request_data['payload'] = request_data["payload"]
-        payload = common_request_data
+        payload = request_data
         files = request_data["files"] if "files" in test_case else None
         extract = request_data["extract"] if "extract" in test_case else None
         validate = request_data["validate"] if "validate" in test_case else None
