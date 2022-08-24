@@ -19,6 +19,9 @@ class ApiRequest:
     # 封装发送请求
     @logger_send
     def send(self, method: str, uri: str, mime_type: str, headers=None, payload=None, files=None):
+        logger.info(f"请求uri是{uri}")
+        logger.info(f"请求方法是{method}")
+        logger.info(f"请求参数是{payload}")
         if headers is None:
             headers = {}
         if method.upper() == "POST":
@@ -43,6 +46,10 @@ class ApiRequest:
         :param files: 上传文件请求格式（dict）
 
         """
+        if "http" in uri or "https" in uri:
+            url = uri
+        else:
+            url = self._base_url + uri
         if 'form_data' in mime_type:
             for key in files:
                 value = files[key]
@@ -53,11 +60,11 @@ class ApiRequest:
                 boundary='--------------' + str(random.randint(1e28, 1e29 - 1))
             )
             headers['Content-type'] = enc.content_type
-            res = requests.post(url=self._base_url + uri, data=enc, headers=headers, verify=False)
+            res = requests.post(url=url, data=enc, headers=headers, verify=False)
         elif 'application/json' in mime_type:
-            res = requests.post(url=self._base_url + uri, json=payload, headers=headers, files=files, verify=False)
+            res = requests.post(url=url, json=payload, headers=headers, files=files, verify=False)
         else:
-            res = requests.post(url=self._base_url + uri, data=payload, headers=headers, files=files, verify=False)
+            res = requests.post(url=url, data=payload, headers=headers, files=files, verify=False)
         try:
             if res.status_code != 200:
                 return res.text
@@ -74,10 +81,14 @@ class ApiRequest:
 
     # 封装get
     def get(self, uri: str, mime_type: str, headers: dict, payload: dict):
-        if 'application/json' in mime_type:
-            res = requests.get(url=self._base_url + uri, headers=headers, json=payload, verify=False)
+        if "http" in uri or "https" in uri:
+            url = uri
         else:
-            res = requests.get(url=self._base_url + uri, headers=headers, params=payload, verify=False)
+            url = self._base_url + uri
+        if 'application/json' in mime_type:
+            res = requests.get(url=url, headers=headers, json=payload, verify=False)
+        else:
+            res = requests.get(url=url, headers=headers, params=payload, verify=False)
         try:
             if res.status_code != 200:
                 return res.text
@@ -94,6 +105,10 @@ class ApiRequest:
 
     # 封装put
     def put(self, uri: str, mime_type: str, headers: dict, payload: dict, files=None):
+        if "http" in uri or "https" in uri:
+            url = uri
+        else:
+            url = self._base_url + uri
         if 'form_data' in mime_type:
             for key in files:
                 value = files[key]
@@ -104,11 +119,11 @@ class ApiRequest:
                 boundary='--------------' + str(random.randint(1e28, 1e29 - 1))
             )
             headers['Content-type'] = enc.content_type
-            res = requests.put(url=self._base_url + uri, data=enc, headers=headers, verify=False)
+            res = requests.put(url=url, data=enc, headers=headers, verify=False)
         elif 'application/json' in mime_type:
-            res = requests.put(url=self._base_url + uri, json=payload, headers=headers, files=files, verify=False)
+            res = requests.put(url=url, json=payload, headers=headers, files=files, verify=False)
         else:
-            res = requests.put(url=self._base_url + uri, data=payload, headers=headers, files=files, verify=False)
+            res = requests.put(url=url, data=payload, headers=headers, files=files, verify=False)
         try:
             if res.status_code != 200:
                 return res.text
@@ -125,10 +140,14 @@ class ApiRequest:
 
     # 封装delete
     def delete(self, uri: str, mime_type: str, headers: dict, payload: dict):
-        if 'application/json' in mime_type:
-            res = requests.delete(url=self._base_url + uri, headers=headers, json=payload, verify=False)
+        if "http" in uri or "https" in uri:
+            url = uri
         else:
-            res = requests.delete(url=self._base_url + uri, headers=headers, params=payload, verify=False)
+            url = self._base_url + uri
+        if 'application/json' in mime_type:
+            res = requests.delete(url=url, headers=headers, json=payload, verify=False)
+        else:
+            res = requests.delete(url=url, headers=headers, params=payload, verify=False)
         try:
             if res.status_code != 200:
                 return res.text
