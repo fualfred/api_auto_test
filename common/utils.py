@@ -9,52 +9,12 @@ from common.logger import logger
 from common.envData import EnvData
 import common.expand as Expand
 from common.readYaml import ReadYaml
-import jinja2
+from common.test_template import TEST_CASE_TEMPLATE
 import subprocess
 
 project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-__TEST_CASE_TEMPLATE__ = jinja2.Template(
-
-"""
-# !/usr/bin/python
-# -*- coding: utf-8 -*-
-import pytest
-import json
-from common.utils import Utils, project_dir
-from common.apiRequests import ApiRequest
-from common.logger import logger
-
-test_data_path = project_dir + "/testData/" + "{{yaml_file_name}}"
-
-
-class {{test_class_name}}:
-
-    @pytest.mark.parametrize("test_case", Utils.get_test_cases(test_data_path))
-    def {{test_method}}(self, test_case, base_url):
-
-        request_data = json.dumps(test_case)
-        request_data = Utils.replace_request_data(request_data)
-        method = request_data["method"]
-        uri = request_data["uri"]
-        mime_type = request_data["mime_type"]
-        payload = request_data
-        files = request_data["files"] if "files" in test_case else None
-        extract = request_data["extract"] if "extract" in test_case else None
-        validate = request_data["validate"] if "validate" in test_case else None
-
-        response = ApiRequest(base_url).send(
-            method, uri, mime_type, headers=None, payload=payload, files=files
-        )
-
-        if extract:
-            logger.info(f"--要提取的数据---{extract}")
-            Utils.extract(response, extract)
-        if validate:
-            logger.info(f"--预期验证的数据---{validate}")
-            Utils.validate(response, validate)
-"""
-)
+__TEST_CASE_TEMPLATE__ = TEST_CASE_TEMPLATE
 
 
 class Utils:
@@ -107,6 +67,7 @@ class Utils:
             set_value = jsonpath.jsonpath(response, val)[0]
             logger.info(f"提取的值是{set_value}")
             setattr(EnvData, key, set_value)
+            logger.info(f"已设置{key}:{getattr(EnvData,key)}成功")
 
     # 替换变量${a} 或者函数$Fn{a(a,b)}
     @staticmethod
@@ -132,25 +93,31 @@ class Utils:
         for val in replace_values:
             if "$Fn" not in val:
                 key = val[2:-1]
+                logger.info(f"提取的key:{key}")
                 request_data = request_data.replace(f"{val}", str(getattr(EnvData, key)))
             else:
-                val_str = val[4:-1]
                 start_param_position = 0
                 end_param_position = 0
-                method = ''
-                for i in range(len(val_str)):
-                    if val_str[i] == '(':
-                        method = val_str[0:i]
+                for i in range(len(val)):
+                    if val[i] == '(':
                         start_param_position = i
-                    if val_str[i] == ')':
+                    if val[i] == ')':
                         end_param_position = i
-                params = val_str[start_param_position + 1: end_param_position]
-                params = params.split(',')
+                params = val[start_param_position + 1: end_param_position]
+                method = val[4:start_param_position]
+                if "," in params:
+                    params = params.split(',')
+                else:
+                    params = [params]
                 method_name = getattr(Expand, method)
-                result = method_name(*params)
+                if len(params) == 1 and params[0] == "":
+                    result = method_name()
+                else:
+                    result = method_name(*params)
                 logger.info(f"获取的参数是{params}，方法是{method_name},计算结果{result}")
                 request_data = request_data.replace(f"{val}", str(result))
         logger.info(f"替换后的数据是\n{request_data}")
+        # return json.loads(request_data)
         return json.loads(request_data, object_hook=_decode)
 
     # @staticmethod
@@ -196,18 +163,18 @@ class Utils:
         test_class_name = test_class_name_list[0].capitalize() + test_class_name_list[1].capitalize()
         out_put_file_path = out_put_dir + "/" + yml_file_name.replace(".yml", ".py")
         out_put_file = open(out_put_file_path, "a", encoding="utf-8")
-        reder_data = {
+        render_data = {
             "yaml_file_name": yml_file_name,
             "test_class_name": test_class_name,
             "test_method": test_class
         }
-        content = __TEST_CASE_TEMPLATE__.render(reder_data)
+        content = __TEST_CASE_TEMPLATE__.render(render_data)
         out_put_file.write(content)
         out_put_file.close()
 
     @staticmethod
     def beautify_test_case_file(file_path: str):
-        logger.info("格式化测用例 ...")
+        logger.info("----格式化测用例----")
         try:
             subprocess.run(["black", file_path])
         except subprocess.CalledProcessError as ex:
